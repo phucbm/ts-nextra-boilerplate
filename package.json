@@ -23,6 +23,12 @@
     "url": "https://github.com/phucbm/ts-nextra-boilerplate/issues"
   },
   "homepage": "https://github.com/phucbm/ts-nextra-boilerplate",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/ts-nextra-boilerplate.js",
+  "module": "dist/ts-nextra-boilerplate.module.js",
+  "types": "dist/types/_index.d.ts",
   "dependencies": {
     "lucide": "^0.479.0",
     "lucide-react": "^0.479.0",
