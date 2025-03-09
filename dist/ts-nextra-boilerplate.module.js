@@ -1,0 +1,6 @@
+/**!
+ * TypeScript Nextra Boilerplate v1.0.0
+ * @author undefined
+ * @homepage https://github.com/phucbm/ts-nextra-boilerplate
+ * @license MIT 2025
+ */var t={d:(s,e)=>{for(var i in e)t.o(e,i)&&!t.o(s,i)&&Object.defineProperty(s,i,{enumerable:!0,get:e[i]})},o:(t,s)=>Object.prototype.hasOwnProperty.call(t,s)},s={};t.d(s,{ov:()=>o,FD:()=>e,Ay:()=>n});class e{constructor(t={}){this.id=crypto.randomUUID();this.options=Object.assign({debug:!1},t),this.options.debug&&console.log(`Boilerplate ${this.id} initialized with options`,this.options)}update(t){return this.options=Object.assign(Object.assign({},this.options),t),this.options.debug&&console.log(`Boilerplate ${this.id} updated with new options`,t),this}destroy(){this.options.debug&&console.log(`Boilerplate ${this.id} destroyed`)}}const i=new class{constructor(){this.instances=[]}create(t={}){const s=new e(t);return this.add(s),s}add(t){this.instances.push(t)}get(t){return this.instances.find((s=>s.id===t))}getAll(){return[...this.instances]}destroy(t){const s=this.get(t);return!!s&&(s.destroy(),this.instances=this.instances.filter((s=>s.id!==t)),!0)}destroyAll(){this.instances.forEach((t=>t.destroy())),this.instances=[]}};"undefined"!=typeof window&&(window.Boilerplate=i);const o=i,n=i;var r=s.ov,a=s.FD,d=s.Ay;export{r as Boilerplate,a as BoilerplateInstance,d as default};
